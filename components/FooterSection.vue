@@ -6,7 +6,7 @@
         <div>SHOP</div>
         <p
           class="py-4 md:w-4/5"
-        >Pick a Sick Wick is a JAMStack demo site built with Nuxt 3, Strapi 4 and Snipcart. If you are interested in how it was built, find out more here: JAMStack E-commerce with Nuxt 3, Strapi 4, and Snipcart.</p>
+        >Le Thanh Duong @ 2022</p>
       </div>
       <div class="col-span-12 md:col-span-3">
         <Heading tag="h4" font-style="h4" color="text-white">Menu</Heading>
