@@ -27,11 +27,7 @@
       </div>
       <div class="col-span-12 md:col-span-3">
         <Heading tag="h4" font-style="h4" color="text-white">Contact</Heading>
-        <p>The Wick Factory,</p>
-        <p>Flame Lane,</p>
-        <p>Waxiton,</p>
-        <p>BN1 5TB</p>
-        <p>United Kingdom</p>
+        <p>Binh Son, Quang Ngai</p>
       </div>
     </Container>
   </footer>
