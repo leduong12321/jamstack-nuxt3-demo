@@ -38,6 +38,6 @@ export default defineNuxtConfig({
       ],
     },
     publicRuntimeConfig: {
-        API_URL: process.env.API_URL
+        API_URL: process.env.API_URL || 'https://strapi-jamstack.herokuapp.com'
     },
 })
