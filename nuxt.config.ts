@@ -3,14 +3,25 @@ import { defineNuxtConfig } from 'nuxt'
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
     css: ['tailwindcss/tailwind.css'],
-    env: {
-      baseUrl: process.env.API_URL || 'http://localhost:3000'
-    },
     build: {
       postcss: {
         // add Postcss options
         postcssOptions: require('./postcss.config.js'),
       },
+    },
+    runtimeConfig: {
+      strapi: { // nuxt/strapi options available server-side
+        url: 'https://strapi-jamstack.herokuapp.com'
+      },
+      public: {
+        strapi: { // nuxt/strapi options available client-side
+          url: 'https://strapi-jamstack.herokuapp.com'
+        }
+      }
+    },
+    // nuxt/strapi options available on both client and server
+    strapi: {
+      prefix: '/api'
     },
     meta: {
       link: [
