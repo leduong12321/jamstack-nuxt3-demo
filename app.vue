@@ -1,7 +1,6 @@
 <template>
 <div>
   <Title>Pick a Sick Wick - Candle Shop</Title>
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *"></meta>
   <NuxtLayout :name="layout">
     <NuxtPage />
   </NuxtLayout>

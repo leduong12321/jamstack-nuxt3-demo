@@ -9,20 +9,6 @@ export default defineNuxtConfig({
         postcssOptions: require('./postcss.config.js'),
       },
     },
-    runtimeConfig: {
-      strapi: { // nuxt/strapi options available server-side
-        url: 'https://strapi-jamstack.herokuapp.com'
-      },
-      public: {
-        strapi: { // nuxt/strapi options available client-side
-          url: 'https://strapi-jamstack.herokuapp.com'
-        }
-      }
-    },
-    // nuxt/strapi options available on both client and server
-    strapi: {
-      prefix: '/api'
-    },
     meta: {
       link: [
         { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
@@ -38,6 +24,6 @@ export default defineNuxtConfig({
       ],
     },
     publicRuntimeConfig: {
-        API_URL: process.env.API_URL || 'https://strapi-jamstack.herokuapp.com'
+        API_URL: 'https://strapi-jamstack.herokuapp.com'
     },
 })
