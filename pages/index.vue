@@ -52,7 +52,7 @@
 import HeaderBg from 'assets/images/header-bg.jpg';
 const config = useRuntimeConfig();
 
-const { data: products } = await useFetch(`${config.API_URL}/api/products?pagination[start]=0&pagination[limit]=4&populate=*`)
+const { data: products } = await useFetch(`https://strapi-jamstack.herokuapp.com/api/products?pagination[start]=0&pagination[limit]=4&populate=*`)
 </script>
 
 <style scoped>
