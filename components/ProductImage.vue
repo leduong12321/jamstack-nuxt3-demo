@@ -11,6 +11,6 @@ const props = defineProps({
 
 const config = useRuntimeConfig();
 const imageUrl = computed(() => {
-  return `${config.API_URL}${props.product.attributes.Image?.data[0].attributes?.formats.thumbnail.url}`
+  return `${props.product.attributes.Image?.data[0].attributes?.formats.thumbnail.url}`
 });
 </script>
